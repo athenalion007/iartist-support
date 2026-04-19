@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iArtist - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+        .lang-switch a:hover, .lang-switch a.active {
+            background: rgba(255,255,255,0.4);
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #764ba2;
+            margin: 30px 0 15px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #555;
+            margin: 20px 0 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        .contact-box h2 {
+            color: #fff;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #666;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .feature-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            color: #fff;
+            padding: 40px 0;
+            opacity: 0.8;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#" class="active" onclick="switchLang('zh')">中文</a>
+            <a href="#" onclick="switchLang('en')">English</a>
+        </div>
+
+        <!-- 中文内容 -->
+        <div id="content-zh">
+            <div class="card">
+                <h1>iArtist 技术支持</h1>
+                <p>感谢您使用 iArtist！我们致力于为您提供最佳的环境感知艺术创作体验。</p>
+                
+                <h2>常见问题</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 应用无法访问相机/麦克风/相册？</div>
+                    <div class="faq-answer">A: 请在 iPhone 设置 → 隐私与安全性 → 相机/麦克风/照片中，允许 iArtist 访问相应权限。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 传感器数据不更新？</div>
+                    <div class="faq-answer">A: 请确保已开启传感器监测功能。在应用中点击"开始监测"按钮，并确保允许运动传感器权限。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如何保存作品？</div>
+                    <div class="faq-answer">A: 双击画布可快速保存当前作品到画廊和相册。您也可以在导出选项中选择保存格式。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 支持哪些艺术风格？</div>
+                    <div class="faq-answer">A: iArtist 支持 50+ 种艺术风格，包括印象派、极简主义、赛博朋克、波普艺术、中国水墨、浮世绘、文艺复兴等。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 如何切换语言？</div>
+                    <div class="faq-answer">A: 进入应用设置 → 语言，选择"中文"或"English"即可切换界面语言。</div>
+                </div>
+                
+                <h2>使用指南</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>实时创作</h4>
+                        <p>利用环境传感器实时生成艺术作品</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>意念驱动</h4>
+                        <p>通过情绪状态影响艺术风格</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>风格迁移</h4>
+                        <p>将照片转换为不同艺术风格</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>图层控制</h4>
+                        <p>专业级图层管理和混合模式</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-box">
+                <h2>联系我们</h2>
+                <p>如果您遇到任何问题或有任何建议，欢迎通过以下方式联系我们：</p>
+                <p>邮箱: <a href="mailto:support@iartist.app">support@iartist.app</a></p>
+                <p>GitHub: <a href="https://github.com/athenalion007">github.com/athenalion007</a></p>
+                <p>我们会在 24 小时内回复您的问题。</p>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="hidden">
+            <div class="card">
+                <h1>iArtist Support</h1>
+                <p>Thank you for using iArtist! We are committed to providing you with the best environment-aware art creation experience.</p>
+                
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: The app cannot access camera/microphone/photos?</div>
+                    <div class="faq-answer">A: Please go to iPhone Settings → Privacy & Security → Camera/Microphone/Photos, and allow iArtist to access the required permissions.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Sensor data is not updating?</div>
+                    <div class="faq-answer">A: Please ensure sensor monitoring is enabled. Tap the "Start Monitoring" button in the app and allow motion sensor permissions.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: How to save artwork?</div>
+                    <div class="faq-answer">A: Double-tap the canvas to quickly save the current artwork to gallery and photos. You can also choose export format in export options.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: What art styles are supported?</div>
+                    <div class="faq-answer">A: iArtist supports 50+ art styles including Impressionist, Minimalist, Cyberpunk, Pop Art, Chinese Ink, Ukiyo-e, Renaissance, and more.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: How to switch languages?</div>
+                    <div class="faq-answer">A: Go to App Settings → Language, select "中文" or "English" to switch the interface language.</div>
+                </div>
+                
+                <h2>User Guide</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Live Creation</h4>
+                        <p>Generate art in real-time using environmental sensors</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Mind Driven</h4>
+                        <p>Influence art style through emotional states</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Style Transfer</h4>
+                        <p>Transform photos into different art styles</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Layer Control</h4>
+                        <p>Professional layer management and blend modes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p>If you encounter any issues or have suggestions, please contact us:</p>
+                <p>Email: <a href="mailto:support@iartist.app">support@iartist.app</a></p>
+                <p>GitHub: <a href="https://github.com/athenalion007">github.com/athenalion007</a></p>
+                <p>We will respond to your inquiry within 24 hours.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 iArtist. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('content-zh').classList.toggle('hidden', lang !== 'zh');
+            document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+            document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
